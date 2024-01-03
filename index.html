@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terminal - Porfolio</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div class="presentation-container" id="top">
+    <div class="mac-window">
+      <div class="mac-bar">
+        <div class="mac-btn red"></div>
+        <div class="mac-btn yellow"></div>
+        <div class="mac-btn green"></div>
+      </div>
+      <div class="console">
+        <div class="outputs">
+          <div class="prompt" id="input">maty@maty: <span class="output">$ Bienvenido a mi porfolio</span> </div>
+          <div class="prompt" id="input">maty@maty: <span class="output">$ ls</span> </div>
+          <div class="output"><a href="#about-me">sobreMi.txt</a> <a href="#projects">misProyectos</a><a
+              href="#contact"> contactame.json</a></div>
+          <div>
+            <div class="input-line">
+              <div class="prompt" id="input1">maty@maty: </div>
+              <div class="output" id="outputLine1"></div>
+              <input type="text" class="input" id="typedText" autofocus />
+            </div>
+          </div>
+
+          <div>
+            <div class="input-line">
+              <div class="prompt" id="input2" style="display: none;">maty@maty: </div>
+              <div class="output" id="outputLine2"></div>
+              <input type="text" class="input" id="typedText" autofocus />
+            </div>
+
+          </div>
+          <div class="input-line">
+            <div class="prompt" id="input3" style="display: none;">maty@maty: </div>
+            <div class="output" id="outputLine3"></div>
+            <input type="text" class="input" id="typedText" autofocus />
+          </div>
+          <div class="input-line">
+            <div class="prompt" id="input3" style="display: none;">maty@maty: </div>
+            <div class="output" id="outputLine3"></div>
+            <input type="text" class="input" id="typedText" autofocus />
+          </div>
+          <div class="input-line">
+            <div class="prompt" id="input3" style="display: none;">maty@maty: </div>
+            <div class="output" id="outputLine3"></div>
+            <input type="text" class="input" id="typedText" autofocus />
+          </div>
+        </div>
+
+
+      </div>
+
+    </div>
+    <div class="perfil-img">
+      <img src="img/perfil.png" alt="" >
+    </div>
+  </div>
+  <div class="down">
+    <p><a href="#about-me"><img src="/img/flecha-hacia-arriba.png" alt=""></a></p>
+  </div>
+
+  <div class="about-me-container">
+    <div class="title" id="about-me">
+      <h1>Sobre mi</h1>
+    </div>
+    <div class="vscode-window">
+      <div class="vscode-content">
+        <div class="file-explorer">
+          <div class="vscode-bar">
+            <div class="mac-btn red"></div>
+            <div class="mac-btn yellow"></div>
+            <div class="mac-btn green"></div>
+          </div>
+          <div class="file">
+
+            <ul>
+              <li class="root-folder"><img class="folder-icon" src="img/carpeta-abierta.png" alt=""> src/</li>
+              <li class="folder"><img class="folder-icon" src="img/carpeta-abierta2.png" alt=""> test/
+                <ul>
+                  <li class="folder-file"><img class="file-icon" src="img/java.png" alt=""> Main.java</li>
+                </ul>
+              </li>
+              <li class="folder"><img class="folder-icon" src="img/carpeta-abierta2.png" alt=""> presentacion
+                <ul>
+                  <li class="folder-file"><img class="file-icon" src="img/codigo-html.png" alt=""> info-me.html</li>
+                </ul>
+              </li>
+              <li class="folder"><img class="folder-icon" src="img/carpeta-abierta2.png" alt=""> educacion
+                <ul>
+                  <li class="folder-file"><img class="file-icon" src="img/codigo-html.png" alt=""> info-educ.html</li>
+                </ul>
+              </li>
+              <li class="folder"><img class="folder-icon" src="img/carpeta-abierta2.png" alt=""> tecnologias
+                <ul>
+                  <li class="folder-file"><img class="file-icon" src="img/codigo-html.png" alt=""> info-skll.html</li>
+                </ul>
+              </li>
+              <li class="folder"><img class="folder-icon" src="img/carpeta-abierta2.png" alt=""> caracteristicas
+                <ul>
+                  <li class="folder-file"><img class="file-icon" src="img/codigo-html.png" alt=""> info-car.html</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="editor">
+
+          <div class="directories">
+            <div class="editor-title-bar" id="directori1">info-me.html</div>
+            <div class="editor-title-bar" id="directori2">info-educ.html</div>
+            <div class="editor-title-bar" id="directori2">info-car.html</div>
+            <div class="editor-title-bar" id="directori2">info-skll.html</div>
+          </div>
+          <div class="code-file" id="codeFile">
+            <div class="line-numbering">
+              <span>1</span>
+              <span>2</span>
+              <span>3</span>
+              <span>4</span>
+              <span>5</span>
+              <span>6</span>
+              <span>7</span>
+              <span>8</span>
+              <span>9</span>
+              <span>10</span>
+              <span>11</span>
+              <span>12</span>
+              <span>13</span>
+              <span>14</span>
+            </div>
+            <div class="code-content">
+              <span class="line">¡Saludos! Soy Matías Morales, un estudiante apasionado de sistemas con muchas ganas de
+                integrarme al mundo laboral mientras continúo con mis estudios. Mi compromiso,dedicación y habilidades
+                técnicas son la combinación perfecta para contribuir de manera positiva y aprender cada día más.</span>
+              <span class="line">Te invito a navergar por estos directorios para conocer un poco mas de mi.</span>
+              <span class="line">¡Espero ser parte de tu equipo y crecer juntos!</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="projects-container">
+    <div class="title" id="projects">
+      <h1>Mis proyectos</h1>
+    </div>
+    <div class="mac-window-projects">
+      <div class="mac-window-project">
+        <div class="mac-bar">
+          <div class="mac-btn red"></div>
+          <div class="mac-btn yellow"></div>
+          <div class="mac-btn green"></div>
+        </div>
+        <div class="console-project">
+          <div class="img-project-container">
+            <img src="/img/tienda.png" alt="">
+          </div>
+          <div class="outputs-projects">
+            <div class="output-project" id="title-project">Mi kiosco</div>
+            <div class="output-project">Tienda virtual, donde el administrador puede gestionar el stock de productos y
+              mostrarlos en una web funcional. Cuenta con Backend (Springboot y Postgre) y Frontend (js) desplegados y
+              funcionales</div>
+
+          </div>
+          <button class="ver-mas-btn" onclick="redirigir('https://github.com/MatiasM12/kiosco')">Ver más</button>
+        </div>
+
+      </div>
+      <div class="mac-window-project">
+        <div class="mac-bar">
+          <div class="mac-btn red"></div>
+          <div class="mac-btn yellow"></div>
+          <div class="mac-btn green"></div>
+        </div>
+        <div class="console-project">
+          <div class="img-project-container">
+            <img src="/img/viajar.png" alt="">
+          </div>
+          <div class="outputs-projects">
+            <div class="output-project" id="title-project">Proyecto Icarus</div>
+            <div class="output-project">Proyecto grupal de administracion de aerolieas. Se realizo Backend (Nodejs y
+              Postgre) y Frontend (Js) despelgados en Heroku. Se utilizo metodologias agiles y documentacion de todo el
+              proyecto</div>
+
+          </div>
+          <button class="ver-mas-btn" onclick="redirigir('https://github.com/MatiasM12/Proyecto-Icarus')">Ver
+            más</button>
+        </div>
+
+      </div>
+      <div class="mac-window-project">
+        <div class="mac-bar">
+          <div class="mac-btn red"></div>
+          <div class="mac-btn yellow"></div>
+          <div class="mac-btn green"></div>
+        </div>
+        <div class="console-project">
+          <div class="img-project-container">
+            <img src="/img/redes-de-ordenadores.png" alt="">
+          </div>
+          <div class="outputs-projects">
+            <div class="output-project" id="title-project">Analisis de redes</div>
+            <div class="output-project">En este trabajo se realizo una simulacion de redes con distintos protocoloes
+              (TCP y UDP) en C++ para luego analizar con WireShark y otras herramientas el trafico junto con sus
+              anomalias y documentarlo.</div>
+
+          </div>
+          <button class="ver-mas-btn"
+            onclick="redirigir('https://github.com/MatiasM12/Analisis-de-redes-con-TCP-y-UDP')">Ver más</button>
+        </div>
+
+      </div>
+    </div>
+    <button class="ver-mas-proyectos-btn"
+      onclick="redirigir('https://github.com/MatiasM12?tab=repositories')">Ver todos</button>
+  </div>
+
+  <div class="title" id="contact">
+    <h1>Contactame</h1>
+  </div>
+
+  <div class="contact-container">
+    <form id="contact-form">
+      <label for="name">Nombre:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Correo Electrónico:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Mensaje:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+
+      <button type="button" onclick="sendEmail()">Enviar Mensaje</button>
+    </form>
+    <div class="contact-icons">
+      <div class="contact-icon">
+          <a href="https://www.linkedin.com/in/matias-morales-44409a215/" target="_blank" rel="noopener noreferrer">
+            <div class="tooltip" data-text="LinkedIn"><img src="/img/linkedin.png" alt="LinkedIn"></div>
+          </a>
+      </div>
+
+      <div class="contact-icon">
+          <a href="mailto:matias.agustin.morales@gmail.com">
+            <div class="tooltip" data-text="Mail"><img src="/img/gmail.png" alt="Correo electrónico"></div>
+          </a>
+      </div>
+
+      <div class="contact-icon">
+          <a href=""  target="_blank" rel="noopener noreferrer">
+            <div class="tooltip" data-text="CV"> <img src="/img/cv.png" alt="Cv"></div>
+          </a>
+      </div>
+  </div>
+  </div>
+
+  <div class="footer">
+    <p><a href="#top"><img src="/img/flecha-hacia-arriba.png" alt=""></a></p>
+    <p>&copy; 2023 Matias Agustin Morales</p>
+  </div>
+  <script src="/js/main.js"></script>
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script>
+    emailjs.init("Zfcx-6wRf_tLxCl8C");
+
+    function sendEmail() {
+      var templateParams = {
+        name: document.getElementById("name").value,
+        email: document.getElementById("email").value,
+        message: document.getElementById("message").value
+      };
+
+      emailjs.send("service_ya8ape6", "template_81px854", templateParams)
+        .then(function (response) {
+          console.log("Correo electrónico enviado con éxito", response);
+          alert("Mensaje enviado con éxito");
+        }, function (error) {
+          console.log("Error al enviar el correo electrónico", error);
+          alert("Error al enviar el mensaje");
+        });
+    }
+  </script>
+</body>
+
+</html>
