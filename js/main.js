@@ -165,7 +165,7 @@ document.addEventListener('DOMContentLoaded', function () {
         <span>14</span>
       </div>
       <div class="code-content">
-        <span class="line" id="subtitle">Educación académica: </span>
+        <span class="line" id="subtitle">Educación: </span>
         <span class="line" >- Formacion primaria y secundaria completos (Antonio toro)</span>
         <span class="line" >- Formacion univeritaria (UNGS):</span>
         <span class="line">  <img  src="https://matiasm12.github.io/Matias.github.io/img/graduacion.png" alt=""> Graduado en Tecnicatura Universitaria en Informatica</span>
@@ -253,6 +253,8 @@ document.addEventListener('DOMContentLoaded', function () {
             <span class="line2" ></span>
             <span class="line2" id="subtitle">- Adaptacion:</span>
             <span class="line2">  Flexibilidad para adaptarme a distintos eqipos y entornos.</span>
+            <span class="line2" id="subtitle">- Metodologias Agiles:</span>
+            <span class="line2">  Tengo conocimiento y experiencia con Scrum.</span>
          </div>`;
         break;
       default:
