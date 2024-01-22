@@ -792,3 +792,9 @@ html {
     flex-wrap: wrap;
   }
 }
+
+@media screen and (max-width: 425px) {
+  .console {
+    height: 250px;
+  }
+}
