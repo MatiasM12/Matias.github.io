@@ -168,8 +168,8 @@ document.addEventListener('DOMContentLoaded', function () {
         <span class="line" id="subtitle">Educación académica: </span>
         <span class="line" >- Formacion primaria y secundaria completos (Antonio toro)</span>
         <span class="line" >- Formacion univeritaria (UNGS):</span>
-        <span class="line">  <img  src="img/graduacion.png" alt=""> Graduado en Tecnicatura Universitaria en Informatica</span>
-        <span class="line">  <img  src="img/cargando.png" alt=""> Cursando ultimo año de la Licenciatura en sistemas</span>
+        <span class="line">  <img  src="https://matiasm12.github.io/Matias.github.io/img/graduacion.png" alt=""> Graduado en Tecnicatura Universitaria en Informatica</span>
+        <span class="line">  <img  src="https://matiasm12.github.io/Matias.github.io/img/cargando.png" alt=""> Cursando ultimo año de la Licenciatura en sistemas</span>
         <!-- Add more lines of code as needed -->
       </div>`;
         break;
@@ -197,29 +197,29 @@ document.addEventListener('DOMContentLoaded', function () {
           <span class="line" id="subtitle">Habilidades Técnicas:</span>
           <span class="line2">- Programación:</span>
           <span class="line2">
-              <div class="tooltip" data-text="Java"><img src="img/java.png" alt=""></div>
-              <div class="tooltip" data-text="Spring Boot"><img src="img/spring-boot.png" alt=""></div>
-              <div class="tooltip" data-text="Node.js"><img src="img/node.png" alt=""></div>
+              <div class="tooltip" data-text="Java"><img src="https://matiasm12.github.io/Matias.github.io/img/java.png" alt=""></div>
+              <div class="tooltip" data-text="Spring Boot"><img src="https://matiasm12.github.io/Matias.github.io/img/spring-boot.png" alt=""></div>
+              <div class="tooltip" data-text="Node.js"><img src="https://matiasm12.github.io/Matias.github.io/img/node.png" alt=""></div>
           </span>
           <span class="line2">- Bases de Datos:</span>
           <span class="line2">
-              <div class="tooltip" data-text="MySQL"><img src="img/mysql.png" alt=""></div>
-              <div class="tooltip" data-text="PostgreSQL"><img src="img/postgre.png" alt=""></div>
-              <div class="tooltip" data-text="MongoDB"><img src="img/mongo.png" alt=""></div>
+              <div class="tooltip" data-text="MySQL"><img src="https://matiasm12.github.io/Matias.github.io/img/mysql.png" alt=""></div>
+              <div class="tooltip" data-text="PostgreSQL"><img src="https://matiasm12.github.io/Matias.github.io/img/postgre.png" alt=""></div>
+              <div class="tooltip" data-text="MongoDB"><img src="https://matiasm12.github.io/Matias.github.io/img/mongo.png" alt=""></div>
           </span>
           <span class="line2">- Desarrollo Web: </span>
           <span class="line2">
-              <div class="tooltip" data-text="HTML5"><img src="img/html-5.png" alt=""></div>
-              <div class="tooltip" data-text="CSS3"><img src="img/css-3.png" alt=""></div>
-              <div class="tooltip" data-text="JavaScript"><img src="img/js.png" alt=""></div>
+              <div class="tooltip" data-text="HTML5"><img src="https://matiasm12.github.io/Matias.github.io/img/html-5.png" alt=""></div>
+              <div class="tooltip" data-text="CSS3"><img src="https://matiasm12.github.io/Matias.github.io/img/css-3.png" alt=""></div>
+              <div class="tooltip" data-text="JavaScript"><img src="https://matiasm12.github.io/Matias.github.io/img/js.png" alt=""></div>
           </span>
           <span class="line2">- Otras Herramientas: </span>
           <span class="line2">
-              <div class="tooltip" data-text="Git"><img src="img/git.png" alt=""></div>
-              <div class="tooltip" data-text="Postman"><img src="img/postman.png" alt=""></div>
-              <div class="tooltip" data-text="Jira"><img src="img/jira.png" alt=""></div>
-              <div class="tooltip" data-text="Trello"><img src="img/trello.png" alt=""></div>
-              <div class="tooltip" data-text="Linux"><img src="img/linux.png" alt=""></div>
+              <div class="tooltip" data-text="Git"><img src="https://matiasm12.github.io/Matias.github.io/img/git.png" alt=""></div>
+              <div class="tooltip" data-text="Postman"><img src="https://matiasm12.github.io/Matias.github.io/img/postman.png" alt=""></div>
+              <div class="tooltip" data-text="Jira"><img src="https://matiasm12.github.io/Matias.github.io/img/jira.png" alt=""></div>
+              <div class="tooltip" data-text="Trello"><img src="https://matiasm12.github.io/Matias.github.io/img/trello.png" alt=""></div>
+              <div class="tooltip" data-text="Linux"><img src="https://matiasm12.github.io/Matias.github.io/img/linux.png" alt=""></div>
           </span>
        </div>
       `;
