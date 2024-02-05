@@ -143,10 +143,10 @@ function redirigir(pagina) {
 
 function pintarCaracteristicas(codeContent){
   codeContent.innerHTML = `<div class="directories" >
-        <div class="editor-title-bar" id="directori1"><img id="directori1-img" src="https://matiasm12.github.io/Matias.github.io/img/personal.png" alt="caracteristicas"></div>
-        <div  class="editor-title-bar" id="directori2" ><img id="directori2-img" src="https://matiasm12.github.io/Matias.github.io/img/acerca-de.png" alt="sobre mi"></div>
-        <div  class="editor-title-bar" id="directori2"><img id="directori2-img" src="https://matiasm12.github.io/Matias.github.io/img/educacion.png" alt="educacion"></div>
-        <div  class="editor-title-bar" id="directori2"><img id="directori2-img" src="https://matiasm12.github.io/Matias.github.io/img/programacion.png" alt="habilidades"></div>
+        <div class="editor-title-bar" id="directori1"><img id="directori1-img" src="img/personal.png" alt="caracteristicas"></div>
+        <div  class="editor-title-bar" id="directori2" ><img id="directori2-img" src="img/acerca-de.png" alt="sobre mi"></div>
+        <div  class="editor-title-bar" id="directori2"><img id="directori2-img" src="img/educacion.png" alt="educacion"></div>
+        <div  class="editor-title-bar" id="directori2"><img id="directori2-img" src="img/programacion.png" alt="habilidades"></div>
         </div>
         <div class="code-file" id="codeFile">
           <div class="line-numbering">
@@ -181,10 +181,10 @@ function pintarCaracteristicas(codeContent){
 
 function pintarHabilidades(codeContent){
   codeContent.innerHTML = `<div class="directories" >
-  <div class="editor-title-bar" id="directori1"><img id="directori1-img" src="https://matiasm12.github.io/Matias.github.io/img/programacion.png" alt="habilidades"></div>
-  <div class="editor-title-bar" id="directori2" ><img id="directori2-img" src="https://matiasm12.github.io/Matias.github.io/img/acerca-de.png" alt="sobre mi"></div>
-  <div  class="editor-title-bar" id="directori2"><img id="directori2-img" src="https://matiasm12.github.io/Matias.github.io/img/educacion.png" alt="educacion"></div>
-  <div  class="editor-title-bar" id="directori2"><img id="directori2-img" src="https://matiasm12.github.io/Matias.github.io/img/personal.png" alt="caracteristicas"></div>
+  <div class="editor-title-bar" id="directori1"><img id="directori1-img" src="img/programacion.png" alt="habilidades"></div>
+  <div class="editor-title-bar" id="directori2" ><img id="directori2-img" src="img/acerca-de.png" alt="sobre mi"></div>
+  <div  class="editor-title-bar" id="directori2"><img id="directori2-img" src="img/educacion.png" alt="educacion"></div>
+  <div  class="editor-title-bar" id="directori2"><img id="directori2-img" src="img/personal.png" alt="caracteristicas"></div>
   </div>
 <div class="code-file" id="codeFile">
 <div class="line-numbering">
@@ -237,10 +237,10 @@ function pintarHabilidades(codeContent){
 
 function pintarEducacion(codeContent){
   codeContent.innerHTML = `<div class="directories" >
-        <div class="editor-title-bar" id="directori1"><img id="directori1-img" src="https://matiasm12.github.io/Matias.github.io/img/educacion.png" alt="educacion"></div>
-        <div  class="editor-title-bar" id="directori2" ><img id="directori2-img" src="https://matiasm12.github.io/Matias.github.io/img/acerca-de.png" alt="sobre mi"></div>
-        <div  class="editor-title-bar" id="directori2"><img id="directori2-img" src="https://matiasm12.github.io/Matias.github.io/img/personal.png" alt="caracteristicas"></div>
-        <div  class="editor-title-bar" id="directori2"><img id="directori2-img" src="https://matiasm12.github.io/Matias.github.io/img/programacion.png" alt="habilidades"></div>
+        <div class="editor-title-bar" id="directori1"><img id="directori1-img" src="img/educacion.png" alt="educacion"></div>
+        <div  class="editor-title-bar" id="directori2" ><img id="directori2-img" src="img/acerca-de.png" alt="sobre mi"></div>
+        <div  class="editor-title-bar" id="directori2"><img id="directori2-img" src="img/personal.png" alt="caracteristicas"></div>
+        <div  class="editor-title-bar" id="directori2"><img id="directori2-img" src="img/programacion.png" alt="habilidades"></div>
         </div>
     <div class="code-file" id="codeFile">
       <div class="line-numbering">
@@ -271,10 +271,10 @@ function pintarEducacion(codeContent){
 
 function pintarInfoSobreMi(codeContent){
   codeContent.innerHTML = `<div class="directories" >
-  <div class="editor-title-bar" id="directori1" ><img id="directori1-img" src="https://matiasm12.github.io/Matias.github.io/img/acerca-de.png" alt="sobre mi"></div>
-  <div  class="editor-title-bar" id="directori2"><img id="directori2-img" src="https://matiasm12.github.io/Matias.github.io/img/educacion.png" alt="educacion"></div>
-  <div  class="editor-title-bar" id="directori2"><img id="directori2-img" src="https://matiasm12.github.io/Matias.github.io/img/personal.png" alt="caracteristicas"></div>
-  <div  class="editor-title-bar" id="directori2"><img id="directori2-img" src="https://matiasm12.github.io/Matias.github.io/img/programacion.png" alt="habilidades"></div>
+  <div class="editor-title-bar" id="directori1" ><img id="directori1-img" src="img/acerca-de.png" alt="sobre mi"></div>
+  <div  class="editor-title-bar" id="directori2"><img id="directori2-img" src="img/educacion.png" alt="educacion"></div>
+  <div  class="editor-title-bar" id="directori2"><img id="directori2-img" src="img/personal.png" alt="caracteristicas"></div>
+  <div  class="editor-title-bar" id="directori2"><img id="directori2-img" src="img/programacion.png" alt="habilidades"></div>
   </div>
   <div class="code-file" id="codeFile">
     <div class="line-numbering">
