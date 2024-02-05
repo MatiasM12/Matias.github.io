@@ -234,6 +234,19 @@ body {
   font-size: 2vw;
 }
 
+#directori1,
+#directori2{
+  width: 69px;
+  height: 30px;
+  text-align: center;
+}
+
+#directori1-img,
+#directori2-img{
+  height: 30px;
+  width: 30px;
+}
+
 .folder-icon {
   width: 20px;
   position: relative;
