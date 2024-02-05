@@ -60,15 +60,16 @@ inputElement.addEventListener('focus', startTyping);
 document.addEventListener('DOMContentLoaded', function () {
   const fileExplorer = document.querySelector('.file-explorer');
   const editor = document.querySelector('.editor');
+  const directories = document.querySelector('.directories');
 
   fileExplorer.addEventListener('click', function (event) {
     const target = event.target;
-
+    console.log(target)
     if (target.tagName === 'LI') {
       const folderName = target.textContent.trim();
       const firstWord = folderName.split(/\s+/)[0];
       updateEditorContent(firstWord);
-      console.log(firstWord)
+      console.log(folderName)
     }
   });
   editor.addEventListener('click', function (event) {
@@ -79,154 +80,75 @@ document.addEventListener('DOMContentLoaded', function () {
       const firstWord = folderName.split(/\s+/)[0];
       updateEditorContent(firstWord);
       console.log(firstWord)
-    }
+      
+    }updateEditorContent2(event.target.alt.trim())
+  });
+
+  directories.addEventListener('click', function (event) {
+    updateEditorContent2(event.target.alt.trim())
   });
 
   function updateEditorContent(folderName) {
     const editorTitleBar = document.querySelector('.editor-title-bar');
     const codeContent = document.querySelector('.editor');
 
-    switch (folderName) {
-      case 'test/':
-      case 'Main.java':
-        codeContent.innerHTML = `<div class="editor-title-bar">Main.java</div>
-    <div class="code-file" id="codeFile">
-      <div class="line-numbering">
-        <span>1</span>
-        <span>2</span>
-        <span>3</span>
-        <span>4</span>
-        <span>5</span>
-        <span>6</span>
-        <span>7</span>
-        <span>8</span>
-        <span>9</span>
-        <span>10</span>
-        <span>11</span>
-        <span>12</span>
-        <span>13</span>
-        <span>14</span>
-        <!-- Add more line numbers as needed -->
-      </div>
-      <div class="code-content">
-        <span class="line2">public class Main {</span>
-        <span class="line2">    public static void Main(String[] args) {</span>
-        <span class="line2">        System.out.println("Hello, World!");</span>
-        <span class="line2">    }</span>
-        <span class="line2">}</span>
-        <!-- Add more lines of code as needed -->
-      </div>`;
-        break;
-      case 'presentacion':
-      case 'info-me.html':
-        codeContent.innerHTML = `<div class="directories" ><div class="editor-title-bar" id="directori1" >info-me.html</div><div  class="editor-title-bar" id="directori2">info-educ.html</div><div  class="editor-title-bar" id="directori2">info-car.html</div><div  class="editor-title-bar" id="directori2">info-skll.html</div></div>
-        <div class="code-file" id="codeFile">
-          <div class="line-numbering">
-            <span>1</span>
-            <span>2</span>
-            <span>3</span>
-            <span>4</span>
-            <span>5</span>
-            <span>6</span>
-            <span>7</span>
-            <span>8</span>
-            <span>9</span>
-            <span>10</span>
-            <span>11</span>
-            <span>12</span>
-            <span>13</span>
-            <span>14</span>
-          </div>
-          <div class="code-content">
-            <span class="line">¡Saludos! Soy Matías Morales, un estudiante apasionado de sistemas con muchas ganas de integrarme al mundo laboral mientras continúo con mis estudios. Mi compromiso,dedicación y habilidades técnicas son la combinación perfecta para contribuir de manera positiva y aprender cada día más.</span>
-            <span class="line">Te invito a navergar por estos directorios para conocer un poco mas de mi.</span>
-            <span class="line">¡Espero ser parte de tu equipo y crecer juntos!</span> </div>
-          </div>
-          </div>`;
-        break;
-      case 'educacion':
-      case 'info-educ.html':
-        codeContent.innerHTML = `<div class="directories" ><div class="editor-title-bar" id="directori1">info-educ.html</div><div  class="editor-title-bar" id="directori2" >info-me.html</div><div  class="editor-title-bar" id="directori2">info-car.html</div><div  class="editor-title-bar" id="directori2">info-skll.html</div></div>
-    <div class="code-file" id="codeFile">
-      <div class="line-numbering">
-        <span>1</span>
-        <span>2</span>
-        <span>3</span>
-        <span>4</span>
-        <span>5</span>
-        <span>6</span>
-        <span>7</span>
-        <span>8</span>
-        <span>9</span>
-        <span>10</span>
-        <span>11</span>
-        <span>12</span>
-        <span>13</span>
-        <span>14</span>
-      </div>
-      <div class="code-content">
-        <span class="line" id="subtitle">Educación: </span>
-        <span class="line" >- Formacion primaria y secundaria completos (Antonio toro)</span>
-        <span class="line" >- Formacion univeritaria (UNGS):</span>
-        <span class="line">  <img  src="https://matiasm12.github.io/Matias.github.io/img/graduacion.png" alt=""> Graduado en Tecnicatura Universitaria en Informatica</span>
-        <span class="line">  <img  src="https://matiasm12.github.io/Matias.github.io/img/cargando.png" alt=""> Cursando ultimo año de la Licenciatura en sistemas</span>
-        <!-- Add more lines of code as needed -->
-      </div>`;
-        break;
-      case 'tecnologias':
-      case 'info-skll.html':
-        codeContent.innerHTML = `<div class="directories" ><div class="editor-title-bar" id="directori1">info-skll.html</div><div class="editor-title-bar" id="directori2" >info-me.html</div><div  class="editor-title-bar" id="directori2">info-educ.html</div><div  class="editor-title-bar" id="directori2">info-car.html</div></div>
-    <div class="code-file" id="codeFile">
-      <div class="line-numbering">
-        <span>1</span>
-        <span>2</span>
-        <span>3</span>
-        <span>4</span>
-        <span>5</span>
-        <span>6</span>
-        <span>7</span>
-        <span>8</span>
-        <span>9</span>
-        <span>10</span>
-        <span>11</span>
-        <span>12</span>
-        <span>13</span>
-        <span>14</span>
-      </div>
-      <div class="code-content">
-          <span class="line" id="subtitle">Habilidades Técnicas:</span>
-          <span class="line2">- Programación:</span>
-          <span class="line2">
-              <div class="tooltip" data-text="Java"><img src="https://matiasm12.github.io/Matias.github.io/img/java.png" alt=""></div>
-              <div class="tooltip" data-text="Spring Boot"><img src="https://matiasm12.github.io/Matias.github.io/img/spring-boot.png" alt=""></div>
-              <div class="tooltip" data-text="Node.js"><img src="https://matiasm12.github.io/Matias.github.io/img/node.png" alt=""></div>
-          </span>
-          <span class="line2">- Bases de Datos:</span>
-          <span class="line2">
-              <div class="tooltip" data-text="MySQL"><img src="https://matiasm12.github.io/Matias.github.io/img/mysql.png" alt=""></div>
-              <div class="tooltip" data-text="PostgreSQL"><img src="https://matiasm12.github.io/Matias.github.io/img/postgre.png" alt=""></div>
-              <div class="tooltip" data-text="MongoDB"><img src="https://matiasm12.github.io/Matias.github.io/img/mongo.png" alt=""></div>
-          </span>
-          <span class="line2">- Desarrollo Web: </span>
-          <span class="line2">
-              <div class="tooltip" data-text="HTML5"><img src="https://matiasm12.github.io/Matias.github.io/img/html-5.png" alt=""></div>
-              <div class="tooltip" data-text="CSS3"><img src="https://matiasm12.github.io/Matias.github.io/img/css-3.png" alt=""></div>
-              <div class="tooltip" data-text="JavaScript"><img src="https://matiasm12.github.io/Matias.github.io/img/js.png" alt=""></div>
-          </span>
-          <span class="line2">- Otras Herramientas: </span>
-          <span class="line2">
-              <div class="tooltip" data-text="Git"><img src="https://matiasm12.github.io/Matias.github.io/img/git.png" alt=""></div>
-              <div class="tooltip" data-text="Postman"><img src="https://matiasm12.github.io/Matias.github.io/img/postman.png" alt=""></div>
-              <div class="tooltip" data-text="Jira"><img src="https://matiasm12.github.io/Matias.github.io/img/jira.png" alt=""></div>
-              <div class="tooltip" data-text="Trello"><img src="https://matiasm12.github.io/Matias.github.io/img/trello.png" alt=""></div>
-              <div class="tooltip" data-text="Linux"><img src="https://matiasm12.github.io/Matias.github.io/img/linux.png" alt=""></div>
-          </span>
-       </div>
-      `;
-        break;
-      case 'caracteristicas':
-      case 'info-car.html':
-        codeContent.innerHTML = `<div class="directories" ><div class="editor-title-bar" id="directori1">info-car.html</div><div  class="editor-title-bar" id="directori2" >info-me.html</div><div  class="editor-title-bar" id="directori2">info-educ.html</div><div  class="editor-title-bar" id="directori2">info-skll.html</div></div>
+    if('test/' == folderName || 'Main.java' == folderName)
+        pintarHolaMundo(codeContent)
+    
+    if('presentacion' == folderName || 'info-me.html' == folderName)
+        pintarInfoSobreMi(codeContent)
+    
+    if('educacion' == folderName || 'info-educ.html' == folderName)
+        pintarEducacion(codeContent)
+
+    if('tecnologias' == folderName || 'info-skll.html' == folderName)
+        pintarHabilidades(codeContent)
+    
+    if('caracteristicas' == folderName || 'info-car.html' == folderName)
+        pintarCaracteristicas(codeContent)
+    
+  }
+
+  function updateEditorContent2(icon) {
+    console.log(icon);
+    const codeContent = document.querySelector('.editor');
+    
+    if(icon == "sobre mi")
+        pintarInfoSobreMi(codeContent)
+    
+    if(icon == "educacion")
+        pintarEducacion(codeContent)
+
+    if(icon == "habilidades")
+        pintarHabilidades(codeContent)
+    
+    if(icon == "caracteristicas")
+        pintarCaracteristicas(codeContent)
+    
+  }
+});
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+
+    document.querySelector(this.getAttribute('href')).scrollIntoView({
+      behavior: 'smooth'
+    });
+  });
+});
+
+function redirigir(pagina) {
+  window.open(pagina, '_blank');
+}
+
+function pintarCaracteristicas(codeContent){
+  codeContent.innerHTML = `<div class="directories" >
+        <div class="editor-title-bar" id="directori1"><img id="directori1-img" src="/img/personal.png" alt="caracteristicas"></div>
+        <div  class="editor-title-bar" id="directori2" ><img id="directori2-img" src="/img/acerca-de.png" alt="sobre mi"></div>
+        <div  class="editor-title-bar" id="directori2"><img id="directori2-img" src="/img/educacion.png" alt="educacion"></div>
+        <div  class="editor-title-bar" id="directori2"><img id="directori2-img" src="/img/programacion.png" alt="habilidades"></div>
+        </div>
         <div class="code-file" id="codeFile">
           <div class="line-numbering">
             <span>1</span>
@@ -255,26 +177,157 @@ document.addEventListener('DOMContentLoaded', function () {
             <span class="line2">  Flexibilidad para adaptarme a distintos eqipos y entornos.</span>
             <span class="line2" id="subtitle">- Metodologias Agiles:</span>
             <span class="line2">  Tengo conocimiento y experiencia con Scrum.</span>
-         </div>`;
-        break;
-      default:
-        break;
-    }
-  }
-});
-
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function (e) {
-    e.preventDefault();
-
-    document.querySelector(this.getAttribute('href')).scrollIntoView({
-      behavior: 'smooth'
-    });
-  });
-});
-
-function redirigir(pagina) {
-  window.open(pagina, '_blank');
+          </div>`;
 }
 
+function pintarHabilidades(codeContent){
+  codeContent.innerHTML = `<div class="directories" >
+  <div class="editor-title-bar" id="directori1"><img id="directori1-img" src="/img/programacion.png" alt="habilidades"></div>
+  <div class="editor-title-bar" id="directori2" ><img id="directori2-img" src="/img/acerca-de.png" alt="sobre mi"></div>
+  <div  class="editor-title-bar" id="directori2"><img id="directori2-img" src="/img/educacion.png" alt="educacion"></div>
+  <div  class="editor-title-bar" id="directori2"><img id="directori2-img" src="/img/personal.png" alt="caracteristicas"></div>
+  </div>
+<div class="code-file" id="codeFile">
+<div class="line-numbering">
+  <span>1</span>
+  <span>2</span>
+  <span>3</span>
+  <span>4</span>
+  <span>5</span>
+  <span>6</span>
+  <span>7</span>
+  <span>8</span>
+  <span>9</span>
+  <span>10</span>
+  <span>11</span>
+  <span>12</span>
+  <span>13</span>
+  <span>14</span>
+</div>
+<div class="code-content">
+    <span class="line" id="subtitle">Habilidades Técnicas:</span>
+    <span class="line2">- Programación:</span>
+    <span class="line2">
+        <div class="tooltip" data-text="Java"><img src="img/java.png" alt=""></div>
+        <div class="tooltip" data-text="Spring Boot"><img src="img/spring-boot.png" alt=""></div>
+        <div class="tooltip" data-text="Node.js"><img src="img/node.png" alt=""></div>
+    </span>
+    <span class="line2">- Bases de Datos:</span>
+    <span class="line2">
+        <div class="tooltip" data-text="MySQL"><img src="img/mysql.png" alt=""></div>
+        <div class="tooltip" data-text="PostgreSQL"><img src="img/postgre.png" alt=""></div>
+        <div class="tooltip" data-text="MongoDB"><img src="img/mongo.png" alt=""></div>
+    </span>
+    <span class="line2">- Desarrollo Web: </span>
+    <span class="line2">
+        <div class="tooltip" data-text="HTML5"><img src="img/html-5.png" alt=""></div>
+        <div class="tooltip" data-text="CSS3"><img src="img/css-3.png" alt=""></div>
+        <div class="tooltip" data-text="JavaScript"><img src="img/js.png" alt=""></div>
+    </span>
+    <span class="line2">- Otras Herramientas: </span>
+    <span class="line2">
+        <div class="tooltip" data-text="Git"><img src="img/git.png" alt=""></div>
+        <div class="tooltip" data-text="Postman"><img src="img/postman.png" alt=""></div>
+        <div class="tooltip" data-text="Jira"><img src="img/jira.png" alt=""></div>
+        <div class="tooltip" data-text="Trello"><img src="img/trello.png" alt=""></div>
+        <div class="tooltip" data-text="Linux"><img src="img/linux.png" alt=""></div>
+    </span>
+ </div>
+`;
+}
 
+function pintarEducacion(codeContent){
+  codeContent.innerHTML = `<div class="directories" >
+        <div class="editor-title-bar" id="directori1"><img id="directori1-img" src="/img/educacion.png" alt="educacion"></div>
+        <div  class="editor-title-bar" id="directori2" ><img id="directori2-img" src="/img/acerca-de.png" alt="sobre mi"></div>
+        <div  class="editor-title-bar" id="directori2"><img id="directori2-img" src="/img/personal.png" alt="caracteristicas"></div>
+        <div  class="editor-title-bar" id="directori2"><img id="directori2-img" src="/img/programacion.png" alt="habilidades"></div>
+        </div>
+    <div class="code-file" id="codeFile">
+      <div class="line-numbering">
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+        <span>4</span>
+        <span>5</span>
+        <span>6</span>
+        <span>7</span>
+        <span>8</span>
+        <span>9</span>
+        <span>10</span>
+        <span>11</span>
+        <span>12</span>
+        <span>13</span>
+        <span>14</span>
+      </div>
+      <div class="code-content">
+        <span class="line" id="subtitle">Educación: </span>
+        <span class="line" >- Formacion primaria y secundaria completos (Antonio toro)</span>
+        <span class="line" >- Formacion univeritaria (UNGS):</span>
+        <span class="line">  <img  src="img/graduacion.png" alt=""> Graduado en Tecnicatura Universitaria en Informatica</span>
+        <span class="line">  <img  src="img/cargando.png" alt=""> Cursando ultimo año de la Licenciatura en sistemas</span>
+        <!-- Add more lines of code as needed -->
+      </div>`;
+}
+
+function pintarInfoSobreMi(codeContent){
+  codeContent.innerHTML = `<div class="directories" >
+  <div class="editor-title-bar" id="directori1" ><img id="directori1-img" src="/img/acerca-de.png" alt="sobre mi"></div>
+  <div  class="editor-title-bar" id="directori2"><img id="directori2-img" src="/img/educacion.png" alt="educacion"></div>
+  <div  class="editor-title-bar" id="directori2"><img id="directori2-img" src="/img/personal.png" alt="caracteristicas"></div>
+  <div  class="editor-title-bar" id="directori2"><img id="directori2-img" src="/img/programacion.png" alt="habilidades"></div>
+  </div>
+  <div class="code-file" id="codeFile">
+    <div class="line-numbering">
+      <span>1</span>
+      <span>2</span>
+      <span>3</span>
+      <span>4</span>
+      <span>5</span>
+      <span>6</span>
+      <span>7</span>
+      <span>8</span>
+      <span>9</span>
+      <span>10</span>
+      <span>11</span>
+      <span>12</span>
+      <span>13</span>
+      <span>14</span>
+    </div>
+    <div class="code-content">
+      <span class="line">¡Saludos! Soy Matías Morales, un estudiante apasionado de sistemas con muchas ganas de integrarme al mundo laboral mientras continúo con mis estudios. Mi compromiso,dedicación y habilidades técnicas son la combinación perfecta para contribuir de manera positiva y aprender cada día más.</span>
+      <span class="line">Te invito a navergar por estos directorios para conocer un poco mas de mi.</span>
+      <span class="line">¡Espero ser parte de tu equipo y crecer juntos!</span> </div>
+    </div>
+    </div>`;
+}
+
+function pintarHolaMundo(codeContent){
+  codeContent.innerHTML = `<div class="editor-title-bar">Main.java</div>
+    <div class="code-file" id="codeFile">
+      <div class="line-numbering">
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+        <span>4</span>
+        <span>5</span>
+        <span>6</span>
+        <span>7</span>
+        <span>8</span>
+        <span>9</span>
+        <span>10</span>
+        <span>11</span>
+        <span>12</span>
+        <span>13</span>
+        <span>14</span>
+        <!-- Add more line numbers as needed -->
+      </div>
+      <div class="code-content">
+        <span class="line2">public class Main {</span>
+        <span class="line2">    public static void Main(String[] args) {</span>
+        <span class="line2">        System.out.println("Hello, World!");</span>
+        <span class="line2">    }</span>
+        <span class="line2">}</span>
+        <!-- Add more lines of code as needed -->
+      </div>`;
+}
