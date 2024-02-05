@@ -69,7 +69,6 @@ document.addEventListener('DOMContentLoaded', function () {
       const folderName = target.textContent.trim();
       const firstWord = folderName.split(/\s+/)[0];
       updateEditorContent(firstWord);
-      console.log(folderName)
     }
   });
   editor.addEventListener('click', function (event) {
