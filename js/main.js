@@ -174,6 +174,7 @@ function pintarCaracteristicas(codeContent){
             <span class="line2" ></span>
             <span class="line2" id="subtitle">- Adaptacion:</span>
             <span class="line2">  Flexibilidad para adaptarme a distintos eqipos y entornos.</span>
+            <span class="line2" ></span>
             <span class="line2" id="subtitle">- Metodologias Agiles:</span>
             <span class="line2">  Tengo conocimiento y experiencia con Scrum.</span>
           </div>`;

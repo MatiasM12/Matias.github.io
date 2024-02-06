@@ -1,0 +1,240 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Menlo', 'Monaco', 'Courier New', monospace;
+    background-color: #1e1e1e;
+    color: #d0d0d0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+.title {
+    padding-top: 30px;
+    text-align: center;
+}
+
+.mac-window {
+    background-color: #282828;
+    border-radius: 10px;
+    width: 45%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.mac-window:hover {
+    transform: scale(1.05);
+}
+
+.mac-bar {
+    background-color: #282828;
+    display: flex;
+    justify-content: last baseline;
+    padding: 10px;
+    border-bottom: 1px solid #55555527;
+    user-select: none;
+    -webkit-app-region: drag;
+}
+
+.mac-btn {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-left: 5px;
+}
+
+.mac-btn.red {
+    background-color: #fc615d;
+}
+
+.mac-btn.yellow {
+    background-color: #fdbc40;
+}
+
+.mac-btn.green {
+    background-color: #34c84a;
+}
+
+.projects-container {
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.mac-window-projects {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap; 
+}
+
+.mac-window-project {
+    max-width: 400px; 
+    width: 100%; /* Take up full width within the flex container */
+    height: 620px;
+    margin: 15px;
+    background-color: #282828;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.mac-window-project:hover {
+    transform: scale(1.05);
+}
+
+.console-project {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.img-project-container {
+    text-align: center;
+}
+
+.img-project-container img {
+    position: relative;
+    width: 170px;
+    margin: 20px;
+}
+
+#title-project {
+    font-weight: bold;
+    font-size: 1.5vw;
+    padding-bottom: 10px;
+}
+
+.outputs-projects {
+    justify-content: center;
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    min-height: 100px;
+    font-size: 1.1vw;
+    overflow-wrap: break-word;
+    flex: 1;
+    opacity: 0.8;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.ver-mas-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  
+  .ver-mas-btn,
+  .ver-mas-proyectos-btn {
+    height: 30px;
+    position: relative;
+    width: 50%; /* Adjusted width */
+    margin: auto; /* Center the buttons */
+    margin-bottom: 30px;
+    background-color: #2d2d2d;
+    color: #d0d0d0;
+    border: 1px solid;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+  }
+  
+  .ver-mas-btn:hover,
+  .ver-mas-proyectos-btn:hover {
+    background-color: #fff;
+    border-color: #fff;
+    color: #2d2d2d;
+  }
+  
+  .ver-mas-proyectos-btn {
+    margin-top: 3%;
+    margin-bottom: 5%;
+    width: 50%; /* Adjusted width */
+  }
+
+  @media screen and (max-width: 768px) {
+
+    body {
+      font-size: 3.1vw;
+    }
+
+    .title{
+        padding-top: 20px;
+    }
+  
+    .mac-window,
+    .mac-window-project {
+      width: 100%;
+      height: auto;
+      margin: 15px auto;
+    }
+  
+    .output {
+      white-space: pre-line;
+    }
+  
+    .output a {
+      word-break: break;
+    }
+ 
+  
+    .mac-window {
+      height: auto;
+      flex-direction: column;
+    }
+  
+    .mac-window-projects {
+      flex-direction: column;
+    }
+  
+    .img-project-container img {
+      width: 130px;
+      padding: 30px;
+    }
+
+  
+    .img-project-container img {
+      max-width: 100%;
+      margin: 10px 0;
+    }
+  
+  
+    .code-content {
+      font-size: 5vw;
+      white-space: normal;
+      line-height: normal;
+      padding-top: 20px;
+    }
+  
+    .projects-container {
+      height: auto;
+    }
+  
+    #title-project {
+      font-size: 7vw;
+    }
+  
+    .ver-mas-proyectos-btn {
+      margin-top: 45px;
+      width: 40%;
+    }
+  
+    .outputs-projects {
+      font-size: 5vw;
+    }
+  
+
+  }
+  
