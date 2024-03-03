@@ -10,7 +10,7 @@
 </head>
 
 <body>
-  <div class="presentation-container" id="top">
+  <section class="presentation-container" id="top">
     <div class="mac-window">
       <div class="mac-bar">
         <div class="mac-btn red"></div>
@@ -21,7 +21,7 @@
         <div class="outputs">
           <div class="prompt" id="input">maty@maty: <span class="output">$ Bienvenido a mi porfolio</span> </div>
           <div class="prompt" id="input">maty@maty: <span class="output">$ ls</span> </div>
-          <div class="output"><a href="#about-me">sobreMi.txt</a> <a href="#projects">misProyectos</a><a
+          <div class="output"><a href="#about-container">sobreMi.txt</a> <a href="#projects">misProyectos</a><a
               href="#contact"> contactame.json</a></div>
           <div>
             <div class="input-line">
@@ -63,94 +63,46 @@
     <div class="perfil-img">
       <img src="https://matiasm12.github.io/Matias.github.io/img/perfil.png" alt="" >
     </div>
-  </div>
-  <div class="down">
-    <p><a href="#about-me"><img src="https://matiasm12.github.io/Matias.github.io//img/flecha-hacia-arriba.png" alt=""></a></p>
-  </div>
+  </section>
 
-  <div class="about-me-container">
-    <div class="title" id="about-me">
-      <h1>Sobre mi</h1>
+
+  <section id="about-container">
+    <div class="mac-bar">
+      <div class="mac-btn red"></div>
+      <div class="mac-btn yellow"></div>
+      <div class="mac-btn green"></div>
     </div>
-    <div class="vscode-window">
-      <div class="vscode-content">
-        <div class="file-explorer">
-          <div class="vscode-bar">
-            <div class="mac-btn red"></div>
-            <div class="mac-btn yellow"></div>
-            <div class="mac-btn green"></div>
-          </div>
-          <div class="file">
-
-            <ul>
-              <li class="root-folder"><img class="folder-icon" src="img/carpeta-abierta.png" alt=""> src/</li>
-              <li class="folder"><img class="folder-icon" src="https://matiasm12.github.io/Matias.github.io/img/carpeta-abierta2.png" alt=""> test/
-                <ul>
-                  <li class="folder-file"><img class="file-icon" src="https://matiasm12.github.io/Matias.github.io/img/java.png" alt=""> Main.java</li>
-                </ul>
-              </li>
-              <li class="folder"><img class="folder-icon" src="https://matiasm12.github.io/Matias.github.io/img/carpeta-abierta2.png" alt=""> presentacion
-                <ul>
-                  <li class="folder-file"><img class="file-icon" src="https://matiasm12.github.io/Matias.github.io/img/codigo-html.png" alt=""> info-me.html</li>
-                </ul>
-              </li>
-              <li class="folder"><img class="folder-icon" src="https://matiasm12.github.io/Matias.github.io/img/carpeta-abierta2.png" alt=""> educacion
-                <ul>
-                  <li class="folder-file"><img class="file-icon" src="https://matiasm12.github.io/Matias.github.io/img/codigo-html.png" alt=""> info-educ.html</li>
-                </ul>
-              </li>
-              <li class="folder"><img class="folder-icon" src="https://matiasm12.github.io/Matias.github.io/img/carpeta-abierta2.png" alt=""> tecnologias
-                <ul>
-                  <li class="folder-file"><img class="file-icon" src="https://matiasm12.github.io/Matias.github.io/img/codigo-html.png" alt=""> info-skll.html</li>
-                </ul>
-              </li>
-              <li class="folder"><img class="folder-icon" src="https://matiasm12.github.io/Matias.github.io/img/carpeta-abierta2.png" alt=""> caracteristicas
-                <ul>
-                  <li class="folder-file"><img class="file-icon" src="https://matiasm12.github.io/Matias.github.io/img/codigo-html.png" alt=""> info-car.html</li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="editor">
-
-          <div class="directories">
-            <div class="editor-title-bar" id="directori1" ><img id="directori1-img" src="https://matiasm12.github.io/Matias.github.io/img/acerca-de.png" alt="sobre mi"></div>
-            <div  class="editor-title-bar" id="directori2"><img id="directori2-img" src="https://matiasm12.github.io/Matias.github.io/img/educacion.png" alt="educacion"></div>
-            <div  class="editor-title-bar" id="directori2"><img id="directori2-img" src="https://matiasm12.github.io/Matias.github.io/img/personal.png" alt="caracteristicas"></div>
-            <div  class="editor-title-bar" id="directori2"><img id="directori2-img" src="https://matiasm12.github.io/Matias.github.io/img/programacion.png" alt="habilidades"></div>
-          </div>
-          <div class="code-file" id="codeFile">
-            <div class="line-numbering">
-              <span>1</span>
-              <span>2</span>
-              <span>3</span>
-              <span>4</span>
-              <span>5</span>
-              <span>6</span>
-              <span>7</span>
-              <span>8</span>
-              <span>9</span>
-              <span>10</span>
-              <span>11</span>
-              <span>12</span>
-              <span>13</span>
-              <span>14</span>
-            </div>
-            <div class="code-content">
-              <span class="line">¡Saludos! Soy Matías Morales, un estudiante apasionado de sistemas con muchas ganas de
-                integrarme al mundo laboral mientras continúo con mis estudios. Mi compromiso,dedicación y habilidades
-                técnicas son la combinación perfecta para contribuir de manera positiva y aprender cada día más.</span>
-              <span class="line">Te invito a navergar por estos directorios para conocer un poco mas de mi.</span>
-              <span class="line">¡Espero ser parte de tu equipo y crecer juntos!</span>
-            </div>
-          </div>
-        </div>
-      </div>
+    <div id="about">
+      <h2>Acerca de mí</h2>
+      <p>Soy un estudiante apasionado de sistemas con muchas ganas de integrarme al mundo laboral mientras continúo con mis estudios.</p>
+      <p>Mi compromiso,dedicación y habilidades técnicas son la combinación perfecta para contribuir de manera positiva y aprender cada día más.</p>
+      <h3>Tecnologías:</h3>
+      <ul class="technologies">
+          <li>Java</li>
+          <li>Spring Boot</li>
+          <li>MySQL</li>
+          <li>PostgreSQL</li>
+          <li>MongoDB</li>
+          <li>Git</li>
+          <li>Postman</li>
+          <li>JavaScript</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Linux</li>
+          <li>Trello - Jira</li>
+      </ul>
+      <h3>Educación:</h3>
+      <ul class="education">
+          <li>Graduado en Tecnicatura Universitaria en Informatica - Universidad Nacional General Sarmiento</li>
+          <li>Cursando Lincenciatura en Sistemas (Ultimo año) - Universidad Nacional General Sarmiento</li>
+      </ul>
+      <h3>Hobbies:</h3>
+      <p class="hobbies">En mi tiempo libre, disfruto de actividades como jugar futbol, juntarme con mi familia o amigos y trabajar en proyectos que me ayuden a mejorar mis habildades tecnicas.</p>
+      <p>¡Espero ser parte de tu equipo y crecer juntos!</p>
     </div>
-  </div>
+  </section>
 
-  <div class="projects-container">
+  <section class="projects-container">
     <div class="title" id="projects">
       <h1>Mis proyectos</h1>
     </div>
@@ -216,50 +168,52 @@
     </div>
     <button class="ver-mas-proyectos-btn"
       onclick="redirigir('https://matiasm12.github.io/Matias.github.io/proyectos.html')">Ver todos</button>
-  </div>
+  </section>
 
-  <div class="title" id="contact">
-    <h1>Contactame</h1>
-  </div>
 
-  <div class="contact-container">
-    <form id="contact-form">
-      <label for="name">Nombre:</label>
-      <input type="text" id="name" name="name" required>
-
-      <label for="email">Correo Electrónico:</label>
-      <input type="email" id="email" name="email" required>
-
-      <label for="message">Mensaje:</label>
-      <textarea id="message" name="message" rows="4" required></textarea>
-
-      <button type="button" onclick="sendEmail()">Enviar Mensaje</button>
-    </form>
-    <div class="contact-icons">
-      <div class="contact-icon">
-          <a href="https://www.linkedin.com/in/matias-morales-44409a215/" target="_blank" rel="noopener noreferrer">
-            <div class="tooltip" data-text="LinkedIn"><img src="https://matiasm12.github.io/Matias.github.io/img/linkedin.png" alt="LinkedIn"></div>
-          </a>
+  <section class="contact-container">
+      <div class="title" id="contact">
+        <h1>Contactame</h1>
       </div>
+      <form id="contact-form">
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name" required>
 
-      <div class="contact-icon">
-          <a href="mailto:matias.agustin.morales@gmail.com">
-            <div class="tooltip" data-text="Mail"><img src="https://matiasm12.github.io/Matias.github.io/img/gmail.png" alt="Correo electrónico"></div>
-          </a>
-      </div>
+        <label for="email">Correo Electrónico:</label>
+        <input type="email" id="email" name="email" required>
 
-      <div class="contact-icon">
-          <a href=""  target="_blank" rel="noopener noreferrer">
-            <div class="tooltip" data-text="CV"> <img src="https://matiasm12.github.io/Matias.github.io/img/cv.png" alt="Cv"></div>
-          </a>
-      </div>
-  </div>
-  </div>
+        <label for="message">Mensaje:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="button" onclick="sendEmail()">Enviar Mensaje</button>
+      </form>
+      <div class="contact-icons">
+        <div class="contact-icon">
+            <a href="https://www.linkedin.com/in/matias-morales-44409a215/" target="_blank" rel="noopener noreferrer">
+              <div class="tooltip" data-text="LinkedIn"><img src="https://matiasm12.github.io/Matias.github.io/img/linkedin.png" alt="LinkedIn"></div>
+            </a>
+        </div>
+
+        <div class="contact-icon">
+            <a href="mailto:matias.agustin.morales@gmail.com">
+              <div class="tooltip" data-text="Mail"><img src="https://matiasm12.github.io/Matias.github.io/img/gmail.png" alt="Correo electrónico"></div>
+            </a>
+        </div>
+
+        <div class="contact-icon">
+            <a href=""  target="_blank" rel="noopener noreferrer">
+              <div class="tooltip" data-text="CV"> <img src="https://matiasm12.github.io/Matias.github.io/img/cv.png" alt="Cv"></div>
+            </a>
+        </div>
+    </div>  
+  </section>
 
   <div class="footer">
     <p><a href="#top"><img src="https://matiasm12.github.io/Matias.github.io/img/flecha-hacia-arriba.png" alt=""></a></p>
     <p>&copy; 2023 Matias Agustin Morales</p>
   </div>
+
+
   <script src="https://matiasm12.github.io/Matias.github.io/js/main.js"></script>
   <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
   <script>
