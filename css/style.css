@@ -300,6 +300,25 @@ body {
   justify-content: flex-start;
 }
 
+.tech-logos {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.tech-logos img {
+  width: 30px;
+  height: auto;
+  margin: 0 5px;
+  filter: brightness(0) invert(1);
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.tech-logos img:hover {
+  filter: none;
+  transform: scale(1.1); 
+}
+
 .ver-mas-btn {
   display: flex;
   align-items: center;
@@ -560,8 +579,7 @@ html {
   }
 
   .contact-container {
-    width: auto; 
-    max-width: 300px;
+    max-width: 350px;
     margin-top: 10px;
     font-size: 4vw;
   }
