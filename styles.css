@@ -172,10 +172,6 @@
     border-radius: 5px;
     cursor: pointer;
   }
-  
-  .about{
-    min-height: 100vh;
-  }
 
   /* Sección */
   section {
@@ -240,7 +236,7 @@
     max-width: 1000px;
     margin: 0 auto;
     flex-wrap: wrap;
-    margin-bottom: 10rem;
+    margin-bottom: 9rem;
   }
   
   .edu-card {
