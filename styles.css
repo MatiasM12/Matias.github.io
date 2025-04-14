@@ -299,7 +299,6 @@
     margin: 0;
     font-size: 1rem;
   }
-  
 
   /* Proyecto */
   .proyecto {
@@ -367,6 +366,7 @@
     font-size: 0.95rem;
     line-height: 1.4;
     margin-bottom: 0.8rem;
+    text-align: justify;
   }
   
   .proyecto-icons img {
@@ -656,6 +656,8 @@
     text-align: center;
     font-size: 1.5rem;
     margin-bottom: 1rem;
+    
+    margin-top: 3rem;
   }
 
   .edu-container {
@@ -685,7 +687,6 @@
 
   .proyecto-img {
     width: 100%;
-    max-width: 90%;
   }
 
   .proyecto-info {
